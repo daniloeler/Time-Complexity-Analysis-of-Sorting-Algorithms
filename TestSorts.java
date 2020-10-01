@@ -28,6 +28,12 @@ public class TestSorts {
       BubbleSort.bubbleSort(numbers, size);
       duration = (System.nanoTime() - startTime)/1000;
       System.out.print("Bubble Sort:" + duration + "\t");
+	  
+	  startTime = System.nanoTime();
+      BubbleSortOptimized.bubbleSort(numbers, size);
+      duration = (System.nanoTime() - startTime)/1000;
+      System.out.print("Bubble Sort - Optimized:" + duration + "\t");
+      System.out.println();
       System.out.println();
     }
     
